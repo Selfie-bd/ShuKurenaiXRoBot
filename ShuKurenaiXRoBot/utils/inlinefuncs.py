@@ -102,7 +102,7 @@ async def inline_help_func(__HELP__):
             input_message_content=InputTextMessageContent(
                 "**__Click A Button To Get Started.__**"
             ),
-            thumb_url="http://telegra.ph/file/0adf9e97735ba8a420973.jpg",
+            thumb_url="https://telegra.ph/file/ebab36e43c1c7b4246322.jpg",
             reply_markup=buttons,
         ),
     ]
@@ -115,27 +115,27 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/ShuKurenaiXRoBot"),
+        InlineKeyboardButton("Main bot", url="https://t.me/GroupManagerDcBot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[ShuKurenaiXRoBot 🔥](http://telegra.ph/file/0adf9e97735ba8a420973.jpg):**
+**[Sunnyhelpdcbot 🔥](https://telegra.ph/file/ebab36e43c1c7b4246322.jpg):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [Owner](t.me/DeepakJack007) 
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [Owner](t.me/groupdcbots) 
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="http://telegra.ph/file/2861eda5afba02bf04254.jpg",
+            thumb_url="https://telegra.ph/file/ebab36e43c1c7b4246322.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -433,8 +433,8 @@ async def tg_search_func(answers, text, user_id):
 
 
 async def music_inline_func(answers, query):
-    chat_id = -1001445180719
-    group_invite = "https://t.me/joinchat/vSDE2DuGK4Y4Nzll"
+    chat_id = -1001741371534
+    group_invite = "https://t.me/+BWZO446htZA0Yjg1"
     try:
         messages = [
             m
