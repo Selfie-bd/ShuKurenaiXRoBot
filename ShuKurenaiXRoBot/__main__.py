@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an Beyblade theme management bot [🔥](http://telegra.ph/file/3cd1f5776c3ea08f609f4.jpg) 
+✪ I'm an Group management bot [🔥](https://telegra.ph/file/ebab36e43c1c7b4246322.jpg) 
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -93,7 +93,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➗ Add Shu Kurenai To Your Group ➗", url="t.me/ShuKurenaiXRoBot?startgroup=new"),
+            text="➕ Add Me To Your Group ➕", url="t.me/SunnyHelpDcBot?startgroup=new"),
     ],
     [
         InlineKeyboardButton(
@@ -109,19 +109,19 @@ buttons = [
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url=f"https://t.me/shukurenai007"),
+                             url=f"https://t.me/groupdcbots"),
     ],
 
 ]
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command[.](http://telegra.ph/file/e384ab52db8c0912ca356.jpg)"""
+Click on the button bellow to get description about specifics command[.](https://telegra.ph/file/ebab36e43c1c7b4246322.jpg)"""
 
-HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """Contact to **@shukurenai007bot**"""
-HELP_IMG = "http://telegra.ph/file/2861eda5afba02bf04254.jpg"
-GROUP_IMG = "http://telegra.ph/file/0adf9e97735ba8a420973.jpg"
+HELP_MSG = "Click the button below to get help menu in your pm."
+DONATE_STRING = """Contact to **@IssuesDcbot**"""
+HELP_IMG = "https://telegra.ph/file/ebab36e43c1c7b4246322.jpg"
+GROUP_IMG = "https://telegra.ph/file/ebab36e43c1c7b4246322.jpg"
 
 
 
@@ -246,7 +246,7 @@ def start(update: Update, context: CallbackContext):
                 [
                   [
                   InlineKeyboardButton(text="✧ Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/shukurenai007"),
+                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/groupdcbots"),
                   ]
                 ]
             ),
@@ -393,16 +393,16 @@ def shukurenai_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="shukurenai_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="shukurenai_notes"),
+                    InlineKeyboardButton(text="ᴀᴅᴍɪɴ⚡", callback_data="shukurenai_admin"),
+                    InlineKeyboardButton(text="ɴᴏᴛᴇꜱ📂", callback_data="shukurenai_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="shukurenai_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="shukurenai_credit"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ👤", callback_data="shukurenai_support"),
+                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛꜱ", callback_data="shukurenai_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/shukurenai007/ShuKurenaiXRoBot"),
-                    InlineKeyboardButton(text="Try inline!​​", switch_inline_query_current_chat=""), 
+                    InlineKeyboardButton(text="ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ⌨️", url="https://github.com/selfie-bd/ShuKurenaiXRoBot"),
+                    InlineKeyboardButton(text="ᴛʀʏ ɪɴʟɪɴᴇ!", switch_inline_query_current_chat=""), 
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_back"),
@@ -462,7 +462,7 @@ def shukurenai_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Support", url="t.me/ShuKurenaiSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/shukurenai007"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/Groupdcbots"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -476,7 +476,7 @@ def shukurenai_about_callback(update, context):
     elif query.data == "shukurenai_credit":
         query.message.edit_text(
             text=f"๏ Credis for Shu Kurenai\n"
-            "\nHere Developers Making And Give Inspiration For Made The ShuKurenaiXRoBot",
+            "\nHere Developers Making And Give Inspiration For Made The Sunnyhelpdcbot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -545,7 +545,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="ʜᴇʟᴘ",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -561,7 +561,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="ʜᴇʟᴘ",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -729,7 +729,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="ꜱᴇᴛᴛɪɴɢꜱ",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -801,16 +801,16 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[𝐈 𝐀𝐦 𝐎𝐧𝐥𝐢𝐧𝐞](http://telegra.ph/file/ff558497b647d265ef029.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[𝐈 𝐀𝐦 𝐎𝐧𝐥𝐢𝐧𝐞](https://telegra.ph/file/ebab36e43c1c7b4246322.jpg)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/ShuKurenaiSupport"),
+                             url=f"https://t.me/Groupdc"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/shukurenai007")
+                             url="https://t.me/groupdcbots")
                      ] 
                 ]
             ),
